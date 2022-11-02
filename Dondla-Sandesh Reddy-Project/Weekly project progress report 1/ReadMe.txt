@@ -1,1 +1,0 @@
-The following wireframes are subjected to change as we move on in our project. Because we might add or remove some features based on that the design is going to change a bit but not by a large margin.
