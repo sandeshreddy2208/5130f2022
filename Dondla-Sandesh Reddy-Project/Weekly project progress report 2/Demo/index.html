@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Firebase Web App</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+
+	<script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div class="mainDiv" align="right">
+		<h1 align="left">Firebase Web App Demo</h1>
+		<textarea id="text" placeholder="Enter text here..."></textarea>
+		<button id="button" type="button" onclick="onSubmit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+	</div>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyBCDHw65MTXt_PVqQ7TMPIx09diV80f7e8",
+		  authDomain: "comp5130f2022.firebaseapp.com",
+		  databaseURL: "https://comp5130f2022-default-rtdb.firebaseio.com",
+		  projectId: "comp5130f2022",
+		  storageBucket: "comp5130f2022.appspot.com",
+		  messagingSenderId: "17660047948",
+		  appId: "1:17660047948:web:a3ff91556e66169e467ae9",
+		  measurementId: "G-QF6KLDEHJ6"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	  </script>
+	<script src="index.js"></script>
+</body>
+
+</html>

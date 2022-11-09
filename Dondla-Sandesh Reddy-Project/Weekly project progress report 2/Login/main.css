@@ -1,0 +1,152 @@
+body{
+    font-family: 'Zen Antique Soft', serif;
+    background-image: linear-gradient(to right, #000000 , #2D3436);
+    color: #CFB53B;
+}
+.main-container{
+    background-image: linear-gradient(to right, #2D3436, #000000);
+    height: 450px;
+    width: 450px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+
+}
+
+.main-container h1{
+    text-align: center;
+}
+
+label{
+    cursor: pointer;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.username{
+    margin: 10px;
+    /* margin-top: 25px; */
+}
+
+.password{
+    margin: 10px;
+}
+
+.username input{
+    border-style: none;
+    padding: 4px;
+    background-color: #252525;
+}
+
+.password input{
+    border-style: none;
+    padding: 4px;
+    background-color: #252525;
+
+}
+
+.submit-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.submit-button input{
+    width: 100px;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #CFB53B;
+    background-color: #252525;
+
+}
+
+.forgot-password a{
+    text-decoration: none;
+    color: #CFB53B;
+    position: relative;
+    left: 60px;
+    top: 15px;
+    display: inline-block;
+}
+
+#sign-up{
+    position: relative;
+    left: 150px;
+}
+
+.horizontal-line{
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.a-signup h4{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.alternative-signup{
+    display: flex;
+    justify-content: center;
+}
+
+.alternative-signup a img{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+
+}
+
+::placeholder{
+    color:white;
+    font-style: italic;
+}
+
+
+.top-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.top-container img{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+@media (max-width:451px){
+body{
+    background-color: #2D3436;
+    background-repeat:repeat-y;
+}
+   
+}
+
+@media (max-width:425px){
+    .main-container{
+        background-image: linear-gradient(to right, #2D3436, #000000);
+        height: 450px;
+        width: 450px;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      border-radius: 25px;
+
+    }
+}
