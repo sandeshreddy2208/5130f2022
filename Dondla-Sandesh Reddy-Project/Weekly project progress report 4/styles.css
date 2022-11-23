@@ -1,0 +1,131 @@
+body{
+    box-sizing: border-box;
+    color: #A4FFEC;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img{
+    height:150px;
+    width:150x;
+}
+
+/* ----header ends---- */
+
+.grid-container{
+    display: grid;
+    grid-template-columns:3fr 1fr;
+    /* grid-template-rows:300px; */
+    grid-auto-rows: minmax(100px,auto);
+    gap: 10px;
+    margin-top: 20px;
+    background-color: #252525;
+
+}
+/* 
+.grid-items-1{
+    grid-row: 1/6;
+} */
+
+.grid-items-2{
+    grid-row: 1/6
+}
+
+.grid-items-3{
+    grid-row:1/6;
+    justify-self: center;
+}
+
+.heading h2{
+    padding-left: 20px;
+}
+
+.w-bottle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chips{
+    text-align: center;
+    margin: 0;
+    padding:0;
+}
+
+.chip-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.choco-heading{
+    text-align: center;
+}
+
+.choco-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.one-heading{
+    display: flex;
+    justify-content: center;
+}
+
+.cakes{
+    display: flex;
+    justify-content: center;
+}
+
+.cake-1-description{
+    margin-left: 50px;
+
+}
+
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+ button{
+    background-color: white;
+    display: flex;
+    margin: 20px;
+    border-radius: 13px;
+    border: none;
+ }
+
+ button:hover{
+    cursor: pointer;
+ }
+
+ button p{
+    color: #252525;
+ }
+
+ .shopping{
+    display: flex;
+ }
+
+ .contact-us h3{
+    text-align: center;
+    background-color: #252525;
+ }
+
+ .footer{
+    background-color: #252525;
+ }
