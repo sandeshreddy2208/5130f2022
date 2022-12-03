@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <title>Feliz Bolos</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="pop-up">
+            <h1>Enter Your Zip-Code</h1>
+            <form action="">
+                <label for="zipcode"></label>
+                <input type="text" maxlength="5" id="zipcode">
+            </form>
+            <button id="submit-button" onclick="onLocation(event)" type="submit">Submit</button>
+        </div>
+    </div>
+
+    <!-- navigation starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Feliz Bolos</a>
+
+            <div class="collpase navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#partners" class="nav-link">Partners</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item cta"><a href="#order" class="nav-link">Order a cake</a></li>
+                    <li id="locationText" class="nav-item"><a href="" class="nav-link">Location</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation ends -->
+
+    <!-- slider  section start -->
+    <section class="home-slider owl-carousel js-fullheight">
+        <div class="slider-item js-fullheight" style="background-image: url(images/background4.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Feliz Bolos</span>
+                        <h1 class="mb-4">Birthday Cake</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight" style="background-image: url(images/background3.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Feliz Bolos</span>
+                        <h1 class="mb-4">Wedding Cake</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight" style="background-image: url(images/background.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Feliz Bolos</span>
+                        <h1 class="mb-4">Special Dessert</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight" style="background-image: url(images/pastries.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Feliz Bolos</span>
+                        <h1 class="mb-4">Special Pastries</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider  section end  -->
+
+    <!-- featured section starts  -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="featured">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="featured-menus ftco-animate">
+                                    <div class="menu-img img" style="background-image: url(images/chocolate-cake.jpg);">
+                                    </div>
+                                    <div class="text text-center">
+                                        <h3>Cakes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="featured-menus ftco-animate">
+                                    <div class="menu-img img"
+                                        style="background-image: url(images/birthday_cakes.jpeg);"></div>
+                                    <div class="text text-center">
+                                        <h3>Birthday Cakes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="featured-menus ftco-animate">
+                                    <div class="menu-img img" style="background-image: url(images/wedding_cakes.jpg);">
+                                    </div>
+                                    <div class="text text-center">
+                                        <h3>Wedding Cakes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="featured-menus ftco-animate">
+                                    <div class="menu-img img" style="background-image: url(images/pastry_2.jpg);"></div>
+                                    <div class="text text-center">
+                                        <h3>Pastries</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured section ends  -->
+
+
+    <!-- about us section starts  -->
+
+    <section class="ftco-wrap-about" id="about">
+        <div class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="intro_content">
+                            <div class="intro_subtitle page_subtitle">About Us</div>
+                            <div class="intro_title">
+                                <h2>Beautiful Story</h2>
+                            </div>
+                            <div class="intro_text">
+                                <p>Our objective is to make cakes that the user wants without any restrictions or
+                                    limitations. We will bake cakes based on the user's preferences from the first step.
+                                    The user can choose from premade modeled cakes or provide input in any field, such
+                                    as shape, size, color, toppings, etc. The user's information is used to customize
+                                    the cake. The best feature we offer is the ability to upload a cake image, and the
+                                    baker attempts to imitate the design using the picture provided. By this, both the
+                                    consumer and the baker will be delighted with the outcome.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6 intro_col">
+                                <div class="intro_image"><img src="images/Aboutus.jpg" alt="intro"></div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 intro_col">
+                                <div class="intro_image"><img src="images/About2.jpeg" alt="intro"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter">
+        <div class="container">
+            <div class="row d-md-flex">
+                <div class="col-md-9">
+                    <div class="row d-md-flex align-items-center">
+                        <div
+                            class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="1">0</strong>
+                                    <span>Years of Experience</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="100">0</strong>
+                                    <span>Cakes/Variety</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="250">0</strong>
+                                    <span>Orders</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="1500">0</strong>
+                                    <span>Happy Customers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center text-md-left">
+                    <p>The amount of love gained by the people is just pure and we are keep on improving our services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about us section ends  -->
+
+    <!-- gallery section starts  -->
+    <section class="ftco-section bg-light" id="partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title normal-title">
+                        <div class="row justify-content-center mb-5 pb-2">
+                            <div class="col-md-12 text-center heading-section ftco-animate">
+                                <span class="subheading">Bakers</span>
+                                <h2 class="mb-4">Our Partners</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/costco.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/patel.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/hannaford.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/walmart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- gallery section ends  -->
+
+    <!-- menu section starts -->
+    <section class="ftco-section" id="menu">
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <span class="subheading">Specialities</span>
+                    <h2 class="mb-4">Our Menu</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Cakes</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/Strawberry.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Strawberry</h3>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>strawberry cream</span>, <span>Strawberry extract</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/Oreo.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Oreo Cake</h3>
+                                </div>
+                            </div>
+                            <p><span>Oreo</span>, <span>Chocolate</span>, <span>Hershey's syrup</span>,
+                                <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/Chocolate.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Chocolate Cake</h3>
+                                </div>
+                            </div>
+                            <p><span>Chocolate cream</span>, <span>Vanilla Frosting</span>, <span>Chocolates</span>,
+                                <span>Hershey's Syrup</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Wedding Cake</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/Redvelvet.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Red Velvet</h3>
+                                </div>
+                            </div>
+                            <p><span>Red velvet</span>, <span>Cream</span>, <span>Vanilla extract</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/Butterscotch.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Butterscotch Cake</h3>
+                                </div>
+                            </div>
+                            <p><span>Butterscotch sugar</span>, <span>Chocolate</span>, <span>caramel syrup</span>,
+                                <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/Vanilla.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Vanilla Cake</h3>
+                                </div>
+                            </div>
+                            <p><span>Vanilla cream</span>, <span>Vanilla Frosting</span>, <span>Vanilla extract</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Birthday Cake</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/Fruitcake.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Fruit Cake</h3>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>berries</span>, <span>kiwi</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/Cheesecake.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Cheesecake</h3>
+                                </div>
+                            </div>
+                            <p><span>Biscoff crust</span>, <span>cream</span>, <span>cheese</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/Blackforest.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Blackforest cake</h3>
+                                </div>
+                            </div>
+                            <p><span>Chocolate ganache</span>, <span>Cherries</span>, <span>chocolate</span>,
+                                <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- menu section ends -->
+
+
+
+    <!-- order a cake section starts -->
+
+    <section class="ftco-section img" id="order" style="background-image: url(images/order_bg.jpg);"
+        data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12 ftco-animate makereservation p-4 px-md-5 pb-md-5">
+                    <div class="heading-section ftco-animate mb-5 text-center">
+                        <span class="subheading">Order</span>
+                        <h2 class="mb-4">Your Cake</h2>
+                    </div>
+                    <form onsubmit="orderForm(event)" id="orderForm">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="bakers">Baker</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                        <select name="" id="bakers" class="form-control">
+                                            <option value="">Market Basket 1</option>
+                                            <option value="">Market Basketr 2</option>
+                                            <option value="">Pound Cake</option>
+                                            <option value="">Red Velvet Cake</option>
+                                            <option value="">Carrot Cake</option>
+                                            <option value="">Sponge Cake</option>
+                                            <option value="">Genoise Cake</option>
+                                            <option value="">Chiffon Cake</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Name</label>
+                                    <input type="text" class="form-control" placeholder="xyz" id="name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Color</label>
+                                    <input type="text" class="form-control" placeholder="xyz" id="color">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="email" class="form-control" placeholder="xyz@gmail.com" id="email">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Size (In Inches)</label>
+                                    <input type="text" class="form-control" placeholder="xyz" id="size">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Shape</label>
+                                    <input type="text" class="form-control" placeholder="xyz" id="shape">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Image</label>
+                                    <input type="file" class="form-control-file" onchange="onImageUpload(event)"
+                                        id="file" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Cake Tier</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                        <select name="" id="cake-tier" class="form-control">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                            <option value="">6</option>
+                                            <option value="">7</option>
+                                            <option value="">8</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Toppings</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                        <select name="" id="toppings" class="form-control">
+                                            <option value="">Chocolates</option>
+                                            <option value="">Cookies</option>
+                                            <option value="">Fruits</option>
+                                            <option value="">sprinkles</option>
+                                            <option value="">Choco Chips</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Candles (Based On The Age)</label>
+                                    <input type="number" class="form-control" placeholder="911" min="0" max="90"
+                                        id="candles">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Phone</label>
+                                    <input type="text" class="form-control" placeholder="911" maxlength="10" id="phone">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Date</label>
+                                    <input type="text" class="form-control" id="book_date" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Layers</label>
+                                    <input type="text" class="form-control" placeholder="1 or 2...." id="layers">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Cake Flavour</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                        <select name="" id="flavour" class="form-control">
+                                            <option value="">Black Forest</option>
+                                            <option value="">Yellow Butter Cake</option>
+                                            <option value="">Pound Cake</option>
+                                            <option value="">Red Velvet Cake</option>
+                                            <option value="">Carrot Cake</option>
+                                            <option value="">Sponge Cake</option>
+                                            <option value="">Genoise Cake</option>
+                                            <option value="">Chiffon Cake</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Weight</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                        <select name="" id="kg" class="form-control">
+                                            <option value="">0.5</option>
+                                            <option value="">1</option>
+                                            <option value="">1.5</option>
+                                            <option value="">2.5</option>
+                                            <option value="">5</option>
+                                            <option value="">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Message on the Cake:</label>
+                                    <textarea class="form-control" id="message" cols="30" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Notes To The Baker</label>
+                                    <textarea class="form-control" id="notes" cols="30" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 mt-3">
+                                <div class="form-group text-center">
+                                    <input type="submit" value="Order Your Cake" class="btn btn-primary py-3 px-5">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- order a cake section ends -->
+
+
+    <!-- footer section starts -->
+    <section class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Feliz Bolos</h2>
+                        <p>We serve and take all type of cake orders. You can personalised cake of your own choice. We
+                            have the best makers in the city working for us and feliz serving to you.
+                            <br><br><br>
+                            FelizBolos@gmail.com
+                            <br>
+                        </p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Open Hours</h2>
+                        <ul class="list-unstyled open-hours">
+                            <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
+                            <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
+                            <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
+                            <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
+                            <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
+                            <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
+                            <li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Instagram</h2>
+                        <div class="thumb d-sm-flex">
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-1.jpg);"></a>
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-2.jpg);"></a>
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-3.jpg);"></a>
+                        </div>
+                        <div class="thumb d-sm-flex">
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-4.jpg);"></a>
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-5.jpg);"></a>
+                            <a href="#" class="thumb-menu img" style="background-image: url(images/insta-6.jpg);"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Newsletter</h2>
+                        <p>To get cake catalogue every month by subscribing below.</p>
+                        <form action="#" class="subscribe-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control mb-2 text-center" placeholder="xyz@gmail.com">
+                                <input type="submit" value="Subscribe" class="form-control submit px-3">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section ends -->
+
+
+
+
+
+    <!-- scripts -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
