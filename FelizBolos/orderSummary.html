@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script src="js/custom.js"></script> -->
+
+    <title>Feliz Bolos</title>
+</head>
+
+<body>
+    <section class="h-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="card" style="border-radius: 10px;">
+                        <div class="card-header px-4 py-5">
+                            <h5 class="text-muted mb-0">Thanks for your Order, <span id="customerName"
+                                    style="color: #0067b1;"></span>!</h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <p class="lead fw-normal mb-0" style="color: #0067b1;">Order</p>
+                                <p class="medium. text-muted mb-0" id="orderNo"></p>
+                            </div>
+                            <div class="card-body px-4 py-5">
+                                <h5 class="text-muted mb-0">ETA: 2 hours</h5>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="fw-bold mb-0">Order Details</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerName1"></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerEmail"></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerPhone1"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerBaker"></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerZipcode"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerTimestamp"></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerSize"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerShape"></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerColor"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerLayers"></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerCandles"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerCakeTier"></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerToppings"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerFlavour"></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerWeight"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerDate"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerNotes"></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerMessage"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerFileName"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="text-muted mb-0" id="customerImage"></p>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2">
+                                <img id="customerImage1" height="auto" width="450px"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- scripts -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="orderSummary.js"></script>
+</body>
+
+</html>
